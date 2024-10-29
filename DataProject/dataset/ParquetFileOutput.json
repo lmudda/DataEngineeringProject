@@ -19,7 +19,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@dataset().FileNamedataset().FileName",
+					"value": "@dataset().FileName",
 					"type": "Expression"
 				},
 				"folderPath": {
