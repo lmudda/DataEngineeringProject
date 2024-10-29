@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Fetch All Tables",
+				"name": "Fetech All Tables",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -33,7 +33,7 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "Fetch All Tables",
+						"activity": "Fetech All Tables",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -42,7 +42,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Fetch All Tables').output.value",
+						"value": "@activity('Fetech All Tables').output.value",
 						"type": "Expression"
 					},
 					"activities": [
@@ -57,6 +57,7 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
+							"userProperties": [],
 							"typeProperties": {
 								"source": {
 									"type": "AzureSqlSource",
@@ -104,11 +105,11 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"FolderName": {
-											"value": "@formatDateTime(utcNow(), 'yyyyMMdd')",
+											"value": "@formatDateTime(utcNow(),'yyyyMMdd')",
 											"type": "Expression"
 										},
 										"FileName": {
-											"value": "@concat(item().table_schema,'.',item().table_name,'.parquet')\n",
+											"value": "@concat(item().table_schema,'.',item().table_name,'.parquet')",
 											"type": "Expression"
 										}
 									}
