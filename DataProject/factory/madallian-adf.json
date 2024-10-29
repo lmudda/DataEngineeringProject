@@ -1,0 +1,9 @@
+{
+	"name": "madallian-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b36bc209-469f-4bd3-b14f-f8b27df0ed9e",
+		"tenantId": "a4f801bb-8a16-46b4-9c7e-a288fb1a44d4"
+	}
+}
