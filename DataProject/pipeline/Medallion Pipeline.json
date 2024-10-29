@@ -108,7 +108,7 @@
 											"type": "Expression"
 										},
 										"FileName": {
-											"value": "@concat(item().table_schema,'.', item().table_name,'.parquet')",
+											"value": "@concat(item().table_schema,'.',item().table_name,'.parquet')\n",
 											"type": "Expression"
 										}
 									}
