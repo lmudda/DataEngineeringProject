@@ -56,7 +56,6 @@
 							"typeProperties": {
 								"source": {
 									"type": "AzureSqlSource",
-									"sqlReaderQuery": "select * from [madallian-db-dev].information_schema.tables\nwhere table_schema = 'SalesLT'\nand table_type = 'BASE TABLE'",
 									"queryTimeout": "02:00:00",
 									"partitionOption": "None"
 								},
@@ -77,7 +76,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "AzureSqlTable1",
+									"referenceName": "TableQuery",
 									"type": "DatasetReference"
 								}
 							],
