@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Fetch ALL",
+				"name": "Fetch ALL Tables",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -33,7 +33,7 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "Fetch ALL",
+						"activity": "Fetch ALL Tables",
 						"dependencyConditions": [
 							"Succeeded"
 						]
