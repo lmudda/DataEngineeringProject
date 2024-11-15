@@ -136,7 +136,13 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"notebookPath": "/medallion Workspace/Base Notebook"
+								"notebookPath": "/medallion Workspace/Base Notebook",
+								"baseParameters": {
+									"table_schema": {
+										"value": "@item().table_schema",
+										"type": "Expression"
+									}
+								}
 							},
 							"linkedServiceName": {
 								"referenceName": "AzureDatabricks1",
