@@ -102,7 +102,13 @@
 							"outputs": [
 								{
 									"referenceName": "ParquetFileOutput",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"FolderName": {
+											"value": "@formatDateTime(utcNow(),'yyyyddMM')",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
